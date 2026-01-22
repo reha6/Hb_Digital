@@ -70,6 +70,8 @@
     <button onclick="sendMessage()">Kirim Pesan ke Chat</button>
     <button onclick="liff.closeWindow()">Tutup LIFF</button>
     <button onclick="forceLogin()">Login Ulang dengan Izin Kirim Pesan</button>
+    <!-- Tombol Website -->
+    <button onclick="openWebsite()">Website</button>
   </main>
 
   <footer>
@@ -106,6 +108,10 @@
     function forceLogin() {
       liff.logout();
       liff.login({ scope: ['chat_message.write'] });
+    }
+
+    function openWebsite() {
+      window.open("https://teamhackbotsrg.my.id/produk-restapi.html", "_blank");
     }
 
     main();
